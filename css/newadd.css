@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+	font-family: '黑体';
+}
+/*覆盖块样式*/
+#newaddr{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 998;
+	background-color: #000;
+	opacity: .5;
+}
+/*弹出对话框样式*/
+#dialog{
+	position: absolute;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	top:150px;
+	z-index: 999;
+	width: 690px;
+	/*height: 419px;*/
+	box-shadow: 0 0 8px #8a8a8a;
+	background-color: #fff;
+}
+#dialog input{
+	text-indent: 4px;
+}
+#addrform{width: 650px;margin: 0 auto;overflow: hidden;}
+.boxxin{width: 100%;height: 38px;border-bottom: 2px solid #000;margin-top: 20px;}
+.boxxin span{
+	font-size: 20px;
+	font-weight: 600;
+	color: #2b2e33;
+}
+/*关闭按钮样式*/
+#closeAddr{
+	display: block;
+	float: right;
+	width: 12px;
+	height: 12px;
+	font-size: 1.2rem;
+	text-decoration: none;
+	background-image: url(../images/guanbi.png);
+	background-repeat: no-repeat;
+}
+.box p{font-size: 16px;color: #292e32}
+.box span{color: #f20000}
+#shouhuo,#dianhua,#add{
+	display: block;
+	float: right;
+}
+.boxname{
+	float: left;
+	width: 210px;	
+	margin-top: 20px;
+}
+.boxname input{
+	display: block;
+	width: 98%;
+	height: 24px;
+	margin-top: 4px;
+}
+.boxphone{
+	float: right;
+	width: 430px;
+	margin-top: 20px;
+}
+.boxphone input{
+	display: block;
+	width: 426px;
+	height: 24px;
+	margin-top: 4px;
+}
+.boxadd{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+/*三个select框样式*/
+.address{
+	display: block;
+	float: left;
+	margin-top: 4px;
+	width: 210px;
+	height: 26px;
+	margin-left: 10px;
+	/*此部分为修改select图标样式，IE不兼容*/
+	appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+  	background-image: url(../images/xiala_22.jpg);
+  	background-repeat: no-repeat;
+  	background-position: right 0;
+  	/*此部分为修改select图标样式，IE不兼容*/
+  	text-indent: 4px;
+
+}
+.address:nth-child(2){
+	margin-left: 0;
+}
+/*详细地址样式*/
+.box1{
+	clear: both;
+	width: 650px;
+	padding-top: 20px;
+}
+.box1 h3{
+	font-family: "黑体";
+	font-size: 16px;
+	color: #292e32;
+	float: left;
+	font-weight: 100;
+}
+.box1 span{
+	color: #f50200;
+}
+.box1 p{
+	float: right;
+	font-family: "黑体";
+	font-size: 16px;
+	color: #f30002;
+}
+.box1 #deat{
+	width: 646px;
+	height: 24px;
+	margin-top: 4px;
+	font-family: "黑体";
+	font-size: 16px;
+	
+
+}
+/*地址别名样式*/
+.box2{
+	float: left;
+	width: 430px;
+	margin-top: 20px;
+}
+.box2 h3{
+	font-family: "黑体";
+	font-size: 16px;
+	color: #292e32;
+	float: left;
+	font-weight: 100;
+}
+.box2 #add{
+	width: 426px;
+	height: 24px;
+	margin-top: 4px;
+	font-family: "黑体";
+	font-size: 16px;
+}
+/*常用别名样式*/
+.box3{
+	float: left;
+	width: 210px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.box3 h3{
+	font-family: "黑体";
+	font-size: 16px;
+	color: #292e32;
+	float: left;
+	font-weight: 100;
+}
+.box3 .home{
+	display: block;
+	width: 66px;
+	height: 26px;
+	background-color: #fff;
+	clear: both;
+	float: left;
+	border: 1px solid #babeca;
+	text-align: center;
+	line-height: 26px;
+	margin-top: 4px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+.box3 .company{
+	display: block;
+	width: 66px;
+	height: 26px;
+	background-color: #fff;
+	float: left;
+	border: 1px solid #babeca;
+	text-align: center;
+	line-height: 26px;
+	margin-top: 4px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+.box3 .pthome{
+	display: block;
+	width: 66px;
+	height: 26px;
+	background-color: #fff;
+	float: left;
+	border: 1px solid #babeca;
+	text-align: center;
+	line-height: 26px;
+	margin-top: 4px;
+	cursor: pointer;
+}
+/*设置默认地址样式*/
+.box4{
+	position: relative;
+	float: left;
+	margin-top: 47px;
+	font-family: "黑体";
+	font-size: 16px;
+	color: #292e32;
+	vertical-align: middle;
+}
+.box4>input{
+	position: absolute;
+	left:20px;
+	z-index: 9;
+	opacity: 0;
+}
+.box4>label:first-of-type{
+	position: absolute;
+	z-index: 100;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #babec9;
+}
+.box4>label:last-of-type{
+	margin-left: 28px;
+}
+.checked{
+	background: url(../images/Checkmark.png) no-repeat;
+	-ms-background: url(../images/Checkmark.png) no-repeat;
+}
+/*保存地址按钮样式*/
+.box5{
+	float: right;
+	margin-top: 30px;
+}
+.box5 input{
+	width: 210px;
+	height: 52px;
+	border: none;
+	background-color: #fdd900;
+	font-family: "黑体";
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
